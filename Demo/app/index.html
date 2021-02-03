@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bussines Model</title>
+
+  <!-- CSS BPMN -->
+  <link rel="stylesheet" href="vendor/bpmn-js/assets/diagram-js.css" />
+  <link rel="stylesheet" href="vendor/bpmn-js/assets/bpmn-font/css/bpmn-embedded.css" />
+  
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  
+  <!-- Side Navigation -->
+  <div class="sideNavigation">
+    <ul>
+      <li style="background-color: #863AB5;"><a href=""><i class="fa fa-audio-description"></i></a></li>
+      <li><a href=""><i class="fa fa-book"></i></a></li>
+      <li><a href=""><i class="fa fa-cubes"></i></a></li>
+      <li><a href=""><i class="fa fa-tv"></i></a></li>
+      <li><a href=""><i class="fa fa-bar-chart"></i></a></li> 
+      <li style="margin-top: 56vh; background-color: #4B3C5F; border-left-style: solid; border-color: white;"><a href=""><i class="fa fa-gear" style="padding-left: 1px;"></i></a></li>
+      <li><a href=""><i class="fa fa-power-off" style="padding-left: 3px;"></i></a></li>
+    </ul>
+  </div>
+
+  <!-- Top Navigation -->
+  <div class="topNavigation">
+    <ul>
+      <li><a href="">Bussines Model</a></li>
+      <li><a >/</a></li>
+      <li><a href="">Editor</a></li>
+    </ul>
+  </div>
+
+  <!-- Menu Navigation -->
+  <div class="menuNavigation">
+    <ul>
+      <li><a id="js-create-diagram" href><span style="font-weight: 600;"></span><i class="fa fa-edit"></i> Create New Bussines Diagram</a></li>
+      <li><a href=""><span style="font-weight: 600;"></span><i class="fa fa-folder-open"></i> Open Your Bussines Diagram</a></li>
+      <li><a href=""><span style="font-weight: 600;"></span><i class="fa fa-cloud-download"></i> Download</a></li>
+      <li><a id="js-download-diagram" href title="download BPMN diagram"><span style="font-weight: 700; margin-left: 15px;">-</span> BPMN Diagram</a></li>
+      <li><a id="js-download-svg" href title="download as SVG image"><span style="font-weight: 700; margin-left: 15px;">-</span> SVG Image</a></li>
+    </ul>
+  </div>
+
+
+  <!-- BPMN Modeler -->
+  <div class="content" id="js-drop-zone">
+
+    <div class="message intro">
+      <div class="note">
+        Drop BPMN diagram from your desktop or create a new diagram to get started.
+      </div>
+    </div>
+
+    <div class="message error">
+      <div class="note">
+        <p>Ooops, we could not display the BPMN 2.0 diagram.</p>
+
+        <div class="details">
+          <span>cause of the problem</span>
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="canvas" id="js-canvas"></div>
+  </div>
+
+  <!-- <ul class="buttons">
+    <li>
+      download
+    </li>
+    <li>
+      <a id="js-download-diagram" href title="download BPMN diagram">
+        BPMN diagram
+      </a>
+    </li>
+    <li>
+      <a id="js-download-svg" href title="download as SVG image">
+        SVG image
+      </a>
+    </li>
+  </ul> -->
+
+  <script src="app.js"></script>
+</html>

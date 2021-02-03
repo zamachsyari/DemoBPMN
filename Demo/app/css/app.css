@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-size: 12px;
+
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.content,
+.content > div {
+  width: 82%;
+  height: 94%;
+  overflow: hidden;
+  float: left;
+}
+
+.content > .message {
+  text-align: center;
+  display: table;
+
+  font-size: 16px;
+  color: #111;
+}
+
+.content > .message .note {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.content .error .details {
+  max-width: 500px;
+  font-size: 12px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.content .error pre {
+  border: solid 1px #CCC;
+  background: #EEE;
+  padding: 10px;
+}
+
+.content:not(.with-error) .error,
+.content.with-error .intro,
+.content.with-diagram .intro {
+  display: none;
+}
+
+
+.content .canvas,
+.content.with-error .canvas {
+  visibility: hidden;
+}
+
+.content.with-diagram .canvas {
+  visibility: visible;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 370px;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.buttons > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.buttons > li > a {
+  background: #DDD;
+  border: solid 1px #666;
+  display: inline-block;
+  padding: 5px;
+}
+
+.buttons a {
+  opacity: 0.3;
+}
+
+.buttons a.active {
+  opacity: 1.0;
+}
+
+/* New Style for UI */
+
+/* Side Navigation */
+
+.sideNavigation,
+.sideNavigation > div {
+  width: 3%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #322740;
+  float: left;
+}
+
+.sideNavigation > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+.sideNavigation li a {
+  padding: 15px;
+  display: block;
+  font-size:24px;
+  color: cornsilk;
+}
+
+
+/* Top Navigation */
+.topNavigation,
+.topNavigation > div {
+  width: 97%;
+  height: 6%;
+  overflow: hidden;
+  /* background-color: #0b8f63; */
+  float: left;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: rgb(219, 219, 219);
+}
+
+.topNavigation > ul {
+  list-style-type: none;
+  /* margin: 0; */
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.topNavigation li {
+  display: inline;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.topNavigation a {
+  font-weight: 600;
+  color: rgb(102, 102, 102);
+}
+
+
+
+/* Menu Navigation */
+.menuNavigation,
+.menuNavigation > div {
+  width: 15%;
+  height: 94%;
+  overflow: hidden;
+  /* background-color: #888888; */
+  float: left;
+}
+
+.menuNavigation > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: rgb(219, 219, 219);
+} 
+
+.menuNavigation li a {
+  padding: 15px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(102, 102, 102);
+  border-bottom-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(219, 219, 219);
+}
+
+.menuNavigation li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
